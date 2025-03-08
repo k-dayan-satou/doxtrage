@@ -1,0 +1,35 @@
+{
+	"name": "doxtrageDev",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// "image": "mcr.microsoft.com/devcontainers/base:jammy",
+    "dockerComposeFile": ["./docker-compose.yml", "docker-compose.override.yml"],
+    "service": "doxtrage_api",
+	"workspaceFolder": "/doxtrage",
+	// "forwardPorts": [8080],
+	"customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // Set *default* container specific settings.json values on container create.
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            // "extensions": [""],
+            "workspaceMount": "source=${localWorkspaceFolder},target=/doxtrage,type=bind,consistency=delegated"
+        }
+    }
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

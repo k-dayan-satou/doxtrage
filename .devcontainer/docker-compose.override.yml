@@ -1,0 +1,5 @@
+services:
+  doxtrage_api:
+    volumes:
+      - ${LOCAL_WORKSPACE_FOLDER}:/doxtrage
+      # - ../:/doxtrage      

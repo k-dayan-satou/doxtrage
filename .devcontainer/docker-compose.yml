@@ -1,0 +1,6 @@
+services:
+  doxtrage_api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
