@@ -28,7 +28,7 @@
             "settings": {
                 "terminal.integrated.shell.linux": "/bin/bash"
             },
-            // "extensions": [""],
+            "extensions": ["vscjava.vscode-gradle","vscjava.vscode-java-pack","vmware.vscode-boot-dev-pack"],
             "workspaceMount": "source=${localWorkspaceFolder},target=/doxtrage,type=bind,consistency=delegated"
         }
     }
