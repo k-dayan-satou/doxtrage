@@ -3,4 +3,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        - USER_ID=$WORK_UID
+        - USER_NAME=$WORK_UNAME
+        - GROUP_ID=$WORK_GID
+        - GROUP_NAME=$WORK_GNAME
     tty: true
